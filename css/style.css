@@ -1041,6 +1041,14 @@ footer .footer-copyright p {
     
 }
 
+@media (max-width:580px) {
+    .scroll-before::before{
+        width: calc(100%  - 1.5rem + 4px);
+        left: calc(.75rem  + 2px);
+    }
+}
 
 
 /*resposnive*/
+
+

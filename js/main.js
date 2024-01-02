@@ -46,9 +46,6 @@ $(document).ready(function () {
 
         $('.simplebar-track').css('width', containerWidth)
 
-
-        console.log("ASd", containerWidth)
-
     }
 
     calcContainerWidth()
