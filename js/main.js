@@ -42,7 +42,7 @@ $(document).ready(function () {
     new SimpleBar($('.years .slider-row')[0], { autoHide: false, direction: 'horizontal' });
 
     function calcContainerWidth() {
-        const containerWidth = $('.container.scroll-before').innerWidth();
+        const containerWidth = $('.container').innerWidth();
 
         $('.simplebar-track').css('width', containerWidth)
 

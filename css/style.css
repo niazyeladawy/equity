@@ -636,25 +636,22 @@ p {
     height: initial;
 }
 
-.scroll-before {
-    position: relative;
+
+.years .year-item .text-cont{
+    height: 50%;
 }
 
-
-
-.scroll-before::before {
+.simplebar-track.simplebar-horizontal::after{
     position: absolute;
     content: "";
     width: calc(100% - 4px);
     height: 1px;
     background-color: #9B9B9B;
-    bottom: 21px;
+    left: 0;
+    bottom: 5px;
     left: 2px;
+    z-index: -1;
 }
-.years .year-item .text-cont{
-    height: 50%;
-}
-
 
 
 
