@@ -30,11 +30,33 @@ $(document).ready(function () {
 
     }
 
-    menuToggleBtn.on('click' , function(){
+    menuToggleBtn.on('click', function () {
         $('body').addClass('menu-opened')
     })
 
-    menuCloseBtn.on('click' , function(){
+    menuCloseBtn.on('click', function () {
         $('body').removeClass('menu-opened')
     })
+
+
+    new SimpleBar($('.years .slider-row')[0], { autoHide: false, direction: 'horizontal' });
+
+    function calcContainerWidth() {
+        const containerWidth = $('.container.scroll-before').innerWidth();
+
+        $('.simplebar-track').css('width', containerWidth)
+
+
+        console.log("ASd", containerWidth)
+
+    }
+
+    calcContainerWidth()
+
+    $(window).on('resize', function () {
+        calcContainerWidth()
+    })
+
+
+
 })
